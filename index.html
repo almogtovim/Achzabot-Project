@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="head-nav">
+        <span class="head-toggle" id="js-navbar-toggle">
+            <img src="menuicon.png" alt="">
+        </span>
+    <a href="#" class="logo"><img src="logo-blue.png"></a>
+    </div>
+    <ul class="main-nav" id="js-menu">
+        <li>
+            <a href="#" class="nav-links">בוא\י  נטריל</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">חנות</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">חזון האכזבוט</a>
+        </li>
+        <li>
+            <a href="#" class="nav-links">צור קשר</a>
+        </li>
+
+    </ul>
+</nav>
+<div class="container">
+<div class="sub-box"></div>
+<div class="sub-box"></div>
+<div class="sub-box"></div>
+</div>
+<div class="sub-box-button"></div>
+<script>
+let mainNav = document.getElementById('js-menu');
+let navBarToggle = document.getElementById('js-navbar-toggle');
+
+navBarToggle.addEventListener('click', function () {
+mainNav.classList.toggle('active');
+});
+</script>
+</body>
+</html>
